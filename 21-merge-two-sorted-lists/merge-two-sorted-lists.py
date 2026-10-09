@@ -6,7 +6,7 @@
 class Solution(object):
     def mergeTwoLists(self, list1, list2):
         result = ListNode(0)
-        head = result
+        head = result 
 
         while list1 and list2:
             if list1.val <= list2.val:
@@ -19,15 +19,12 @@ class Solution(object):
 
             head = head.next
 
-
         if list1:
             head.next = list1
 
         if list2:
             head.next = list2
 
+
         return result.next
-      
 
-
-        
